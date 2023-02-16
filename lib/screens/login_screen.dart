@@ -28,16 +28,29 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 10,
               ),
-              TextField(
-                controller: name,
-                decoration: InputDecoration(
-                  suffixIcon: IconButton(
-                    onPressed: name.clear,
-                    icon: const Icon(Icons.clear),
-                  ),
-                  hintText: 'Name',
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(15.00),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15.0),
+                  color: Colors.white,
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color.fromARGB(101, 154, 93, 229),
+                      blurRadius: 5,
+                      spreadRadius: 2,
+                    ),
+                  ],
+                ),
+                child: TextField(
+                  controller: name,
+                  decoration: InputDecoration(
+                    suffixIcon: IconButton(
+                      onPressed: name.clear,
+                      icon: const Icon(Icons.clear),
+                    ),
+                    hintText: 'Name',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15.0),
+                    ),
                   ),
                 ),
               ),
