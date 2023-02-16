@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Test2Drive'),
+        title: const Text('Test2Drive', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w800),),
         centerTitle: true,
       ),
       body: const Padding(

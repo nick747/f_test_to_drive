@@ -2,6 +2,7 @@ import 'package:f_test_to_drive/screens/homescreen.dart';
 import 'package:flutter/material.dart';
 import '../main.dart';
 
+var name = TextEditingController();
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -10,7 +11,6 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  var name = TextEditingController();
 
   @override
   Widget build(BuildContext context) {

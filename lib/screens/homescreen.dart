@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './login_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -12,7 +13,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Test2Drive'),
+        title: Text('Ciao ${name.text}!', style: const TextStyle(fontSize: 25, fontWeight: FontWeight.w800),),
+        automaticallyImplyLeading: false,
         centerTitle: true,
       ),
     );
